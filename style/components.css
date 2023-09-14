@@ -1,0 +1,248 @@
+.notify {
+    font-size: 10px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    min-width: 16px;
+    height: 16px;
+    position: absolute;
+    background: var(--orange, #F55123);
+    padding: 0 3px 1px;
+    border-radius: 68px;
+}
+
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: min-content;
+    z-index: 2;
+
+    padding: 10px 16px 14px 16px;
+    flex-direction: column;
+    gap: 8px;
+
+    color: var(--black, #000);
+    font-size: 13px;
+    line-height: 16px;
+
+    border-radius: 8px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.30), 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.goods-image {
+    position: relative;
+    aspect-ratio: .75;
+    border-radius: 8px;
+    overflow: hidden;
+    display: inline-flex;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
+}
+.goods-image img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.refusal-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;  
+
+    color: var(--black, #000);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.refusal-info_with-frame {
+    padding: 8px 8px 12px 8px;
+    border-radius: 8px;
+    background: var(--smoky, #F6F6FA);
+}
+.refusal-info__chek-mark-icon {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    background: url(../images/check-mark-icon.svg);
+}
+.refusal-info__state {
+    color: var(--green, #0CB477);
+    cursor: pointer;
+    border-bottom: 1px dashed rgba(12, 180, 119, 0.2);
+}
+.refusal-info__state:hover + .tooltip {
+    display: flex;
+}
+.refusal-info__tooltip {
+    top: 24px;
+    left: 224px;
+    width: 288px;
+    padding: 10px 16px 14px 16px;
+}
+
+
+.pay-info {
+}
+.pay-info__card-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: var(--black, #000);
+    font-size: 16px;
+    line-height: 24px;
+}
+.pay-info__card-icon {
+    display: inline-flex;
+    width: 32px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+    border-radius: 4px;
+    background: #F6F6FA;
+}
+.pay-info__card-number {
+    display: inline-block;
+    margin-right: 12px;
+    margin-left: 8px;
+}
+.pay-info__card-date {
+    display: inline-block;
+}
+.pay-info_low-card-info .pay-info__card-info {
+    font-size: 13px;
+    line-height: 16px;
+}
+.pay-info_low-card-info .pay-info__card-date {
+    display: none;
+}
+
+.pay-info__frame {
+    color: var(--black, #000);
+    font-size: 13px;
+    line-height: 16px;
+}
+.pay-info__method-choice {
+    display: none;
+}
+.pay-info_with-choice .pay-info__frame {
+    padding: 12px 8px;
+    border-radius: 8px;
+    background: var(--smoky, #F6F6FA);
+}
+.pay-info_with-choice .pay-info__method-choice {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.pay-info__checkbox {
+    margin-right: 8px;
+}
+.pay-info__clarification {
+}
+
+@media (width < 660px) {
+    .pay-info_with-choice .pay-info__card-info {
+        display: none;
+    }
+    .pay-info_with-choice .pay-info__frame {
+        background: var(--smoky-dark, #F0ECF4);
+        padding: 9px 8px;
+    }
+}
+
+
+.checkbox {
+    cursor: pointer;
+    display: inline-block;
+    z-index: 1;
+}
+.checkbox.checkbox_all-included {
+    display: flex;
+    column-gap: 11px;
+    position: relative;
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+.checkbox input {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+.checkbox__decor {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #d3d4dd;
+    border-radius: 6px;
+    background: var(--white, #fff);
+}
+.checkbox.checkbox_selected .checkbox__decor {
+    border: none;
+    background: var(--magneta);
+}
+.checkbox.checkbox_selected .checkbox__decor > span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: url(../images/checkbox-icon.svg);
+    width: 13px;
+    height: 11px;
+}
+.checkbox:hover:not(.checkbox.checkbox_selected) > .checkbox__decor{
+    border-color: #a9a8b0;
+}
+
+@media (width < 660px) {
+    .checkbox__text {
+        line-height: 18px;
+    }
+}
+
+
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 6.25em;
+    height: 2.75em;
+    border-radius: 8px;
+    background: var(--white, #FFF);
+    padding-left: 0.35em;
+    padding-right: 0.305em;
+    color: var(--black, #000);
+    font-size: 16px;
+    line-height: 1.5em;
+}
+.counter__button {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 6px;
+    fill: currentColor;
+}
+.counter__button:not(.counter__button_disable):hover  {
+    background-color: #f1f1f5;
+}
+.counter__button_disable {
+    color: rgba(0, 0, 0, 0.20);
+}
+.counter__total {
+    margin-bottom: 0.3em;
+}
+.counter__minus-icon { 
+}
+.counter__plus-icon {
+}

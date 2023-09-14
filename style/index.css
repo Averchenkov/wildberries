@@ -1,0 +1,85 @@
+:root{
+    --violet: #6725A8;
+    --white: #fff;
+    --black: #000;
+    --magneta: #CB11AB;
+    --gray: #A0A0A4;
+    --background: #F6F6FA;
+    --dark--coral: #FF3B30;
+    --orange: #F55123;
+    --green: #0CB477;
+    --smoky: #F6F6FA;
+    --smoky-dark: #F0ECF4;
+    --mobileSidePadding: 16px;
+}
+
+html {
+    font-family: 'Segoe UI','Segoe WP',Roboto,Ubuntu,Oxygen,Cantarell,'Fira Sans','Helvetica Neue',Helvetica,'Lucida Grande','Droid Sans',Tahoma,'Microsoft Sans Serif',sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    background: var(--background);
+}
+
+body, button, fieldset, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+::after, ::before {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+button, input {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    background-color: inherit;
+}
+
+input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+
+.footer__container, .header__container, .basket-page__container, .mobile-menu__container {
+    max-width: 1400px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+@media (width < 1024px) {
+    .footer__container, .header__container, .basket-page__container, .mobile-menu__container {
+        max-width: 1400px;
+        padding: 0 var(--mobileSidePadding);
+    }
+}
+
+@media (width < 660px) {
+    .basket-page__container {
+        padding: 0;
+    }
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}

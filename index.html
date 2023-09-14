@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images//favicon.svg">
+    <link rel="stylesheet" href="style/index.css" type="text/css"/>
+    <link rel="stylesheet" href="style/components.css" type="text/css"/>    
+    <link rel="stylesheet" href="style/header.css" type="text/css"/>
+    <link rel="stylesheet" href="style/main.css" type="text/css"/>
+    <link rel="stylesheet" href="style/goods.css" type="text/css"/>
+    <link rel="stylesheet" href="style/delivery.css" type="text/css"/>
+    <link rel="stylesheet" href="style/result.css" type="text/css"/>
+    <link rel="stylesheet" href="style/inputs.css" type="text/css"/>
+    <link rel="stylesheet" href="style/footer.css" type="text/css"/>    
+    <title>Корзина</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__content">
+          <div class="header__burger">
+            <button class="burger">
+              <span class="burger__icon"></span>
+            </button>
+          </div>
+          <a class="header__logo">товары и точка</a>
+          <div class="header__search">
+            <div class="search-catalog">
+              <input class="search-catalog__input" placeholder="Я ищу..."></input>
+              <button class="search-catalog__btn search-btn"></button>
+            </div>
+            <button class="search-icon"></button>
+          </div>
+          <div class="header__navbar navbar">
+            <div class="navbar__item">
+              <a href="/lk" class="navbar__link">
+                <span class="navbar__icon navbar__icon-profile"></span>
+                <span>Профиль</span>
+              </a>
+            </div>
+            <div class="navbar__item">
+              <a href="/lk" class="navbar__link">
+                <span class="navbar__icon navbar__icon-basket">
+                  <span class="navbar__notify notify">3</span>
+                </span>
+                <span>Корзина</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="basket-page">
+      <div class="basket-page__container">
+        <div class="basket-page__content">
+          <div class="basket-page__goods basket-goods">
+            <h1 class="basket-goods__title">Корзина</h1>
+            <section class="basket-goods__in-stock">
+              <div class="basket-goods__header">
+                <label class="basket-goods__checkbox-all-included checkbox checkbox_all-included">
+                  <input type="checkbox">
+                  <span class="checkbox__decor"><span></span></span>
+                  <span class="checkbox__text">Выбрать все</span>
+                </label>
+                <button class="basket-goods__control-button "></button> <!-- basket-goods__control-button_hidden-->
+              </div>
+              <div class="goods-list">
+                <div class="goods-list__item goods-instance ">
+                  <div class="goods-instance__checkbox-and-img">
+                    <label class="goods-instance__checkbox checkbox checkbox_selected">
+                      <input type="checkbox">
+                      <span class="checkbox__decor"><span></span></span>
+                      <span class="checkbox__text"></span>
+                    </label>
+                    <a href="" class="goods-instance__img goods-image">
+                      <img src="images/t-shirt.webp" alt="Футболка">
+                    </a>
+                    <div class="goods-instance__mobile-size">
+                      <div>56</div>
+                    </div>
+                  </div>
+                  <div class="goods-instance__info">
+                    <a href="" class="goods-instance__name">
+                      Футболка UZcotton мужская
+                    </a>
+                    <div class="goods-instance__properties">
+                      <span class="goods-instance__color">Цвет: белый</span>
+                      <span class="goods-instance__size">Размер: 56</span>
+                    </div>
+                    <span class="goods-instance__store">Коледино WB</span>
+                    <div class="goods-instance__company">
+                      OOO Вайлдберриз
+                      <span class="goods-instance__company-info-icon"></span>
+                      <div class="goods-instance__company-tooltip tooltip">
+                        <span>OOO «ВАЛДБЕРРИЗ»</span>
+                        <span>ОГРН: 5167746237148</span>
+                        <span>
+                          129337, Москва, улица Красная Сосна,
+                          2, корпус 1, стр. 1, помещение 2, офис 34
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="goods-instance__control-panel">
+                    <div class="goods-instance__counter counter">
+                      <button class="counter__button counter__minus-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.0996 12.8242H7.91992V11.5156H17.0996V12.8242Z"/>
+                          </svg>
+                      </button>
+                      <span class="counter__total">1</span>
+                      <button class="counter__button counter__button_disable counter__plus-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.0996 12.8242H13.1543V16.7598H11.8555V12.8242H7.91992V11.5156H11.8555V7.58008H13.1543V11.5156H17.0996V12.8242Z"/>
+                          </svg>                          
+                      </button>
+                    </div>
+                    <span class="goods-instance__remaining-quantity">
+                      Осталось <span class="goods-instance__remaining-quantity-data">2</span> шт.
+                    </span>
+                    <div class="goods-instance__control-btns buttons-like-and-delete">
+                      <button class="buttons-like-and-delete__like"><span></span></button>
+                      <button class="buttons-like-and-delete__delete"><span></span></button>
+                    </div>
+                  </div>
+                  <div class="goods-instance__price">
+                    <div class="goods-instance__price-new"><span>522</span> сом</div>
+                    <div class="goods-instance__price-old">1051 сом</div>
+                    <div class="goods-instance__discount-tooltip tooltip">
+                      <div>
+                        <span>Скидка 55%</span>
+                        <span>−300 сом</span>
+                      </div>
+                      <div>
+                        <span>Скидка покупателя 10%</span>
+                        <span>−30 сом</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="goods-list__item goods-instance">
+                  <div class="goods-instance__checkbox-and-img">
+                    <label class="goods-instance__checkbox checkbox checkbox_selected">
+                      <input type="checkbox">
+                      <span class="checkbox__decor"><span></span></span>
+                      <span class="checkbox__text"></span>
+                    </label>
+                    <a href="" class="goods-instance__img goods-image">
+                      <img src="images/phone-case.webp" alt="Чехол">
+                    </a>
+                  </div>
+                  <div class="goods-instance__info">
+                    <a href="" class="goods-instance__name">
+                        Силиконовый чехол картхолдер (отверстия) для карт,
+                        прозрачный кейс бампер на Apple iPhone XR, MobiSaf
+                    </a>
+                    <div class="goods-instance__properties">
+                      <span class="goods-instance__color">Цвет: прозрачный</span>
+                      <span class="goods-instance__size"></span>
+                    </div>
+                    <span class="goods-instance__store">Коледино WB</span>
+                    <div class="goods-instance__company">
+                      OOO Мегапрофстиль
+                      <span class="goods-instance__company-info-icon"></span>
+                      <div class="goods-instance__company-tooltip tooltip">
+                        <span>OOO «МЕГАПРОФСТИЛЬ»</span>
+                        <span>ОГРН: 5167746237148</span>
+                        <span>
+                          129337, Москва, улица Красная Сосна,
+                          2, корпус 1, стр. 1, помещение 2, офис 34
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="goods-instance__control-panel">
+                    <div class="goods-instance__counter counter">
+                      <button class="counter__button counter__minus-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.0996 12.8242H7.91992V11.5156H17.0996V12.8242Z"/>
+                          </svg>
+                      </button>
+                      <span class="counter__total">200</span>
+                      <button class="counter__button counter__button_disable counter__plus-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.0996 12.8242H13.1543V16.7598H11.8555V12.8242H7.91992V11.5156H11.8555V7.58008H13.1543V11.5156H17.0996V12.8242Z"/>
+                          </svg>                          
+                      </button>
+                    </div>
+                    <div class="goods-instance__control-btns buttons-like-and-delete">
+                      <button class="buttons-like-and-delete__like"><span></span></button>
+                      <button class="buttons-like-and-delete__delete"><span></span></button>
+                    </div>
+                  </div>
+                  <div class="goods-instance__price">
+                    <div class="goods-instance__price-new goods-instance__price-new_large">
+                      <span>2 100 047</span> сом
+                    </div>
+                    <div class="goods-instance__price-old">2 300 047 сом</div>
+                    <div class="goods-instance__discount-tooltip tooltip">
+                      <div>
+                        <span>Скидка 55%</span>
+                        <span>−300 сом</span>
+                      </div>
+                      <div>
+                        <span>Скидка покупателя 10%</span>
+                        <span>−30 сом</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="goods-list__item goods-instance">
+                  <div class="goods-instance__checkbox-and-img">
+                    <label class="goods-instance__checkbox checkbox checkbox_selected">
+                      <input type="checkbox">
+                      <span class="checkbox__decor"><span></span></span>
+                      <span class="checkbox__text"></span>
+                    </label>
+                    <a href="" class="goods-instance__img goods-image">
+                      <img src="images/pencils.webp" alt="Карандаши">
+                    </a>
+                  </div>
+                  <div class="goods-instance__info">
+                    <a href="" class="goods-instance__name">
+                      Карандаши цветные Faber-Castell "Замок",
+                      набор 24 цвета, заточенные, шестигранные, Faber-Castell
+                    </a>
+                    <div class="goods-instance__properties" style="display: none;">
+                      <span class="goods-instance__color">Цвет: белый</span>
+                      <span class="goods-instance__size">Размер: 56</span>
+                    </div>
+                    <span class="goods-instance__store">Коледино WB</span>
+                    <div class="goods-instance__company">
+                      OOO Вайлдберриз
+                      <span class="goods-instance__company-info-icon"></span>
+                      <div class="goods-instance__company-tooltip tooltip">
+                        <span>OOO «ВАЛДБЕРРИЗ»</span>
+                        <span>ОГРН: 5167746237148</span>
+                        <span>
+                          129337, Москва, улица Красная Сосна,
+                          2, корпус 1, стр. 1, помещение 2, офис 34
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="goods-instance__control-panel">
+                    <div class="goods-instance__counter counter">
+                      <button class="counter__button counter__minus-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.0996 12.8242H7.91992V11.5156H17.0996V12.8242Z"/>
+                          </svg>
+                      </button>
+                      <span class="counter__total">2</span>
+                      <button class="counter__button counter__button_disable counter__plus-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.0996 12.8242H13.1543V16.7598H11.8555V12.8242H7.91992V11.5156H11.8555V7.58008H13.1543V11.5156H17.0996V12.8242Z"/>
+                          </svg>                          
+                      </button>
+                    </div>
+                    <span class="goods-instance__remaining-quantity">
+                      Осталось <span class="goods-instance__remaining-quantity-data">2</span> шт.
+                    </span>
+                    <div class="goods-instance__control-btns buttons-like-and-delete">
+                      <button class="buttons-like-and-delete__like"><span></span></button>
+                      <button class="buttons-like-and-delete__delete"><span></span></button>
+                    </div>
+                  </div>
+                  <div class="goods-instance__price">
+                    <div class="goods-instance__price-new"><span>494</span> сом</div>
+                    <div class="goods-instance__price-old">950 сом</div>
+                    <div class="goods-instance__discount-tooltip tooltip">
+                      <div>
+                        <span>Скидка 55%</span>
+                        <span>−300 сом</span>
+                      </div>
+                      <div>
+                        <span>Скидка покупателя 10%</span>
+                        <span>−30 сом</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <setion class="basket-goods__absent">
+              <div class="basket-goods__header">
+                <span class="basket-goods__absent-title">Отсутствуют · 
+                  <span class="basket-goods__absent-title-data">3</span>
+                  товара</span>
+                <button class="basket-goods__control-button basket-goods__control-button_hidden"></button>
+              </div>
+              <div class="goods-list">
+                <div class="goods-list__item goods-instance goods-instance_absent">
+                  <div class="goods-instance__checkbox-and-img">
+                    <label class="goods-instance__checkbox checkbox checkbox_selected">
+                      <input type="checkbox">
+                      <span class="checkbox__decor"><span></span></span>
+                      <span class="checkbox__text"></span>
+                    </label>
+                    <a href="" class="goods-instance__img goods-image">
+                      <img src="images/t-shirt.webp" alt="Футболка">
+                    </a>
+                  </div>
+                  <div class="goods-instance__info">
+                    <a href="" class="goods-instance__name">
+                      Футболка UZcotton мужская
+                    </a>
+                    <div class="goods-instance__properties">
+                      <span class="goods-instance__color">Цвет: белый</span>
+                      <span class="goods-instance__size">Размер: 56</span>
+                    </div>
+                    <span class="goods-instance__store">Коледино WB</span>
+                    <div class="goods-instance__company">
+                      OOO Вайлдберриз
+                      <span class="goods-instance__company-info-icon"></span>
+                    </div>
+                  </div>
+                  <div class="goods-instance__control-panel">
+                    <div class="goods-instance__counter counter">
+                      <button class="counter__button counter__minus-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.0996 12.8242H7.91992V11.5156H17.0996V12.8242Z"/>
+                          </svg>
+                      </button>
+                      <span class="counter__total">1</span>
+                      <button class="counter__button counter__button_disable counter__plus-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.0996 12.8242H13.1543V16.7598H11.8555V12.8242H7.91992V11.5156H11.8555V7.58008H13.1543V11.5156H17.0996V12.8242Z"/>
+                          </svg>                          
+                      </button>
+                    </div>
+                    <span class="goods-instance__remaining-quantity">
+                      Осталось <span class="goods-instance__remaining-quantity-data">2</span> шт.
+                    </span>
+                    <div class="goods-instance__control-btns buttons-like-and-delete">
+                      <button class="buttons-like-and-delete__like"><span></span></button>
+                      <button class="buttons-like-and-delete__delete"><span></span></button>
+                    </div>
+                  </div>
+                  <div class="goods-instance__price">
+                    <div class="goods-instance__price-new"><span>522</span> сом</div>
+                    <div class="goods-instance__price-old">1051 сом</div>
+                  </div>
+                </div>
+
+
+                <div class="goods-list__item goods-instance goods-instance_absent">
+                  <div class="goods-instance__checkbox-and-img">
+                    <label class="goods-instance__checkbox checkbox checkbox_selected">
+                      <input type="checkbox">
+                      <span class="checkbox__decor"><span></span></span>
+                      <span class="checkbox__text"></span>
+                    </label>
+                    <a href="" class="goods-instance__img goods-image">
+                      <img src="images/phone-case.webp" alt="Чехол">
+                    </a>
+                  </div>
+                  <div class="goods-instance__info">
+                    <a href="" class="goods-instance__name">
+                        Силиконовый чехол картхолдер (отверстия) для карт,
+                        прозрачный кейс бампер на Apple iPhone XR, MobiSafe
+                    </a>
+                    <div class="goods-instance__properties">
+                      <span class="goods-instance__color">Цвет: прозрачный</span>
+                      <span class="goods-instance__size"></span>
+                    </div>
+                    <span class="goods-instance__store">Коледино WB</span>
+                    <div class="goods-instance__company">
+                      OOO Мегапрофстиль
+                      <span class="goods-instance__company-info-icon"></span>
+                    </div>
+                  </div>
+                  <div class="goods-instance__control-panel">
+                    <div class="goods-instance__counter counter">
+                      <button class="counter__button counter__minus-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.0996 12.8242H7.91992V11.5156H17.0996V12.8242Z"/>
+                          </svg>
+                      </button>
+                      <span class="counter__total">200</span>
+                      <button class="counter__button counter__button_disable counter__plus-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.0996 12.8242H13.1543V16.7598H11.8555V12.8242H7.91992V11.5156H11.8555V7.58008H13.1543V11.5156H17.0996V12.8242Z"/>
+                          </svg>                          
+                      </button>
+                    </div>
+                    <span class="goods-instance__remaining-quantity">
+                      Осталось <span class="goods-instance__remaining-quantity-data">2</span> шт.
+                    </span>
+                    <div class="goods-instance__control-btns buttons-like-and-delete">
+                      <button class="buttons-like-and-delete__like"><span></span></button>
+                      <button class="buttons-like-and-delete__delete"><span></span></button>
+                    </div>
+                  </div>
+                  <div class="goods-instance__price">
+                    <div class="goods-instance__price-new"><span>2 100 047</span> сом</div>
+                    <div class="goods-instance__price-old">2 300 047 сом</div>
+                  </div>
+                </div>
+
+
+                <div class="goods-list__item goods-instance goods-instance_absent">
+                  <div class="goods-instance__checkbox-and-img">
+                    <label class="goods-instance__checkbox checkbox checkbox_selected">
+                      <input type="checkbox">
+                      <span class="checkbox__decor"><span></span></span>
+                      <span class="checkbox__text"></span>
+                    </label>
+                    <a href="" class="goods-instance__img goods-image">
+                      <img src="images/pencils.webp" alt="Карандаши">
+                    </a>
+                    <div class="goods-instance__mobile-size">
+                      <div>56/54/52/50</div>
+                    </div>
+                  </div>
+                  <div class="goods-instance__info">
+                    <a href="" class="goods-instance__name">
+                    Карандаши цветные Faber-Castell "Замок",
+                      набор 24 цвета, заточенные, шестигранные, Faber-Castell
+                    </a>
+                    <div class="goods-instance__properties" style="display: none;">
+                      <span class="goods-instance__color">Цвет: белый</span>
+                      <span class="goods-instance__size">Размер: 56</span>
+                    </div>
+                    <span class="goods-instance__store">Коледино WB</span>
+                    <div class="goods-instance__company">
+                      OOO Вайлдберриз
+                      <span class="goods-instance__company-info-icon"></span>
+                    </div>
+                  </div>
+                  <div class="goods-instance__control-panel">
+                    <div class="goods-instance__counter counter">
+                      <button class="counter__button counter__minus-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.0996 12.8242H7.91992V11.5156H17.0996V12.8242Z"/>
+                          </svg>
+                      </button>
+                      <span class="counter__total">2</span>
+                      <button class="counter__button counter__button_disable counter__plus-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.0996 12.8242H13.1543V16.7598H11.8555V12.8242H7.91992V11.5156H11.8555V7.58008H13.1543V11.5156H17.0996V12.8242Z"/>
+                          </svg>                          
+                      </button>
+                    </div>
+                    <span class="goods-instance__remaining-quantity">
+                      Осталось <span class="goods-instance__remaining-quantity-data">2</span> шт.
+                    </span>
+                    <div class="goods-instance__control-btns buttons-like-and-delete">
+                      <button class="buttons-like-and-delete__like"><span></span></button>
+                      <button class="buttons-like-and-delete__delete"><span></span></button>
+                    </div>
+                  </div>
+                  <div class="goods-instance__price">
+                    <div class="goods-instance__price-new"><span>494</span> сом</div>
+                    <div class="goods-instance__price-old">950 сом</div>
+                  </div>
+                </div>
+              </div>
+            </setion>
+          </div>
+          
+          <div class="basket-page__order basket-order">
+            <section class="basket-order__item basket-order__delivery">
+              <div class="basket-order__header">
+                <h2 class="basket-order__title">Способ доставки</h2>
+                <button class="basket-order__title-button">Изменить</button>
+              </div>
+              <div class="basket-order__delivery-info delivery-table">
+                <div class="delivery-table__item">Пункт выдачи</div>
+                <div class="delivery-table__item">
+                  <div class="delivery-table__address">
+                    Бишкек, улица Ахматбека Суюмбаева, 12/1
+                  </div>
+                  <div class="delivery-table__address-info">
+                    <span class="delivery-table__star-icon"></span>
+                    <span class="delivery-table__address-rating">4.99</span>
+                    <span class="delivery-table__opening-hours">Ежедневно с 10 до 21</span>
+                  </div>
+                </div>
+                <div class="delivery-table__item">Стоимость доставки</div>
+                <div class="delivery-table__item">Бесплатно</div>
+                <div class="delivery-table__item">5—6 февраля</div>
+                <div class="delivery-table__item delivery-table__image-list">
+                  <div class="delivery-table__img">
+                    <a href="" class="delivery-table__img goods-image">
+                      <img src="images/t-shirt.webp" alt="Футболка">
+                    </a>
+                  </div>
+
+                  <div class="delivery-table__img">
+                    <a href="" class="goods-image">
+                      <img src="images/phone-case.webp" alt="Чехол">
+                    </a>
+                    <span class="delivery-table__img-notify notify">184</span>
+                  </div>
+                  
+                  <div class="delivery-table__img">
+                    <a href="" class="delivery-table__img goods-image">
+                      <img src="images/pencils.webp" alt="Карандаши">
+                    </a>
+                    <span class="delivery-table__img-notify notify">2</span>
+                  </div>
+                </div>
+                <div class="delivery-table__item">7—8 февраля</div>
+                <div class="delivery-table__item delivery-table__image-list">
+                  <div class="delivery-table__img">
+                    <a href="" class="delivery-table__img goods-image">
+                      <img src="images/phone-case.webp" alt="Чехол">
+                    </a>
+                    <span class="delivery-table__img-notify notify">16</span>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-order__refusal-info refusal-info">
+                <span class="refusal-info__chek-mark-icon"></span>
+                <span>
+                  Обратная доставка товаров на склад при отказе —
+                  <span  class="refusal-info__state">бесплатно</span>
+                  <div class="refusal-info__tooltip tooltip">
+                    Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно
+                  </div>
+                </span>
+              </div>
+            </section>
+
+            <section class="basket-order__item basket-order__pay">
+              <div class="basket-order__header">
+                <h2 class="basket-order__title">Способ оплаты</h2>
+                <button class="basket-order__title-button">Изменить</button>
+              </div>
+
+              <div class="basket-order__pay-info pay-info"> 
+                <div class="pay-info__card-info">
+                  <span class="pay-info__card-icon">
+                    <img src="./images/mir-icon.svg" alt="Мир">
+                  </span>
+                  <span class="pay-info__card-number">1234 56•• •••• 1234</span>
+                  <span class="pay-info__card-date">01/30</span>
+                </div>
+              
+                <div class="pay-info__frame">
+                  <div class="pay-info__method-choice">
+                    <label class="pay-info__checkbox checkbox">
+                      <span class="checkbox-decor"><span></span></span>
+                      <input type="checkbox" class="checkbox__input">
+                    </label>
+                    <span>Списать оплату сразу</span>
+                  </div>
+                  <span class="pay-info__clarification">
+                    Спишем оплату с карты при получении
+                  </span>
+                </div>
+              </div>
+            </section>
+
+            <section class="basket-order__item basket-order__user">
+              <div class="basket-order__header">
+                <h2 class="basket-order__title">Получатель</h2>
+              </div>
+              <form class="basket-order__user-form">
+                <div class="basket-order__input-group user-input user-input__danger">
+                  <label class="user-input__container">
+                    <input required>
+                    <span class="user-input__label">Имя</span>
+                    <div class="user-input__helper">Укажите имя</div>
+                  </label>
+                </div>
+
+                <div class="basket-order__input-group user-input">
+                  <label class="user-input__container">
+                    <input required>
+                    <span class="user-input__label">Фамилия</span>
+                    <div class="user-input__helper"></div>
+                  </label>
+                </div>
+
+                <div class="basket-order__input-group user-input">
+                  <label class="user-input__container">
+                    <input required>
+                    <span class="user-input__label">Почта</span>
+                    <div class="user-input__helper"></div>
+                  </label>
+                </div>
+
+                <div class="basket-order__input-group user-input">
+                  <label class="user-input__container">
+                    <input required value="+7 988 123-45-67">
+                    <span class="user-input__label">Телефон</span>
+                    <div class="user-input__helper"></div>
+                  </label>
+                </div>
+
+                <div class="basket-order__input-group user-input">
+                  <label class="user-input__container">
+                    <input required>
+                    <span class="user-input__label">ИНН</span>
+                    <div class="user-input__helper">Для таможенного оформления</div>
+                  </label>
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+
+        <aside class="basket-page__sidebar basket-result">
+          <section class="basket-result__price-table">
+            <div class="basket-result__price-table-row">
+              <span>Итого</span>
+              <span>2 101 063 <span class="basket-result__currencies">сом</span></span>
+            </div>
+            <div class="basket-result__price-table-row">
+              <span>203 товара</span>
+              <span>2 302 048 сом</span>
+            </div>
+            <div class="basket-result__price-table-row">
+              <span>Скидка</span>
+              <span>−200 985 сом</span>
+            </div>
+            <div class="basket-result__price-table-row">
+              <span>Доставка</span>
+              <span>Бесплатно</span>
+            </div>
+          </section>
+
+          <section class="basket-result__delivery">
+            <div class="basket-result__header">
+              <span class="basket-result__title">Доставка в пункт выдачи</span>
+              <span class="basket-result__edit-icon"></span>
+            </div>
+            <div class="basket-result__delivery-address">
+              Бишкек, улица Ахматбека Суюмбаева, 12/1
+            </div>
+            <button class="basket-result__delivery-date">
+              <span>5–8 фев</span>
+            </button>
+            <div class="basket-result__refusal-info refusal-info refusal-info_with-frame">
+              <span class="refusal-info__chek-mark-icon"></span>
+              <span>
+                Обратная доставка товаров на склад при отказе —
+                <span  class="refusal-info__state">бесплатно</span>
+                <div class="refusal-info__tooltip tooltip">
+                  Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно
+                </div>
+              </span>
+            </div>
+          </section>
+
+          <section class="basket-result__pay">
+            <div class="basket-result__header">
+              <span class="basket-result__title">Оплата картой</span>
+              <span class="basket-result__edit-icon"></span>
+            </div>
+            <div class="basket-result__pay-info pay-info pay-info_with-choice pay-info_low-card-info"> 
+              <div class="pay-info__card-info">
+                <span class="pay-info__card-icon">
+                  <img src="./images/mir-icon.svg" alt="Мир">
+                </span>
+                <span class="pay-info__card-number">1234 12•• •••• 1234</span>
+                <span class="pay-info__card-date">01/30</span>
+              </div>
+              <div class="pay-info__frame">
+                <div class="pay-info__method-choice">
+                  <label class="pay-info__checkbox checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox__decor"><span></span></span>
+                    <span class="checkbox__text"></span>
+                  </label>
+                  <span>Списать оплату сразу</span>
+                </div>
+                <span class="pay-info__clarification">
+                  Спишем оплату с карты при получении
+                </span>
+              </div>
+            </div>
+          </section>
+          <section class="basket-result__solution">
+            <button class="basket-result__button">Заказать</button>
+            <p class="basket-result__oferta-access">
+              Соглашаюсь 
+              <a href="">
+                с правилами пользования торговой площадкой
+              </a> 
+              и
+              <a href="">возврата</a>
+            </p>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+          © 2022  ООО «Товары и точка»
+        </div>
+      </div>
+    </footer>
+    <div class="mobile-menu">
+      <div class="mobile-menu__container">
+        <div class="mobile-menu__content">
+          <button class="mobile-menu__button">
+            <img src="images/mobile-menu-home-icon.svg" alt="">
+          </button>
+
+          <button class="mobile-menu__button">
+            <img src="images/mobile-menu-catalog-icon.svg" alt="">
+          </button>
+
+          <button class="mobile-menu__button mobile-menu__basket">
+            <img src="images/mobile-menu-basket-icon.svg" alt="Карзина">
+            <span class="mobile-menu__notify notify">3</span>
+          </button>
+
+          <button class="mobile-menu__button">
+            <img src="images/mobile-menu-like-icon.svg" alt="">
+          </button>
+
+          <button class="mobile-menu__button">
+            <img src="images/mobile-menu-user-icon.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
