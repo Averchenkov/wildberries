@@ -91,6 +91,9 @@ function changeResultBasket() {
     totalPriceWithoutSaleHTML.textContent = priceFormat(basket.totalPriceWithoutSale)
     totalSaleHTML.textContent = "- " + priceFormat(basket.totalSale)
     totalCountHTML.textContent = priceFormat(basket.totalCount)
+    if (checkboxChoicePaymentHTML.classList.contains("checkbox_selected")) {
+        orderBtnHTML.textContent = `Оплатить ${priceFormat(basket.totalPrice)} сом`
+    }
 }
 
 function fillDeliveryTable() {
@@ -136,6 +139,7 @@ function renderPresenceProductList() {
     const presenceProductListHTML = basket.renderPresenceProductList()
     listHTML.innerHTML = presenceProductListHTML.innerHTML
     listHTML.style.maxHeight = listHTML.scrollHeight + "px"
+
 
     changeResultBasket()
     fillDeliveryTable()
