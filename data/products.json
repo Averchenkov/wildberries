@@ -1,0 +1,123 @@
+[
+    {
+        "id" : 0,
+        "img" : "t-shirt",
+        "imgAlt" : "Футболка",
+        "name" : "Футболка UZcotton мужская",
+        "color" : "белый",
+        "size" : "56",
+        "store" : "Коледино WB",
+        "companyId" : 0,
+        "isPresence" : true,
+        "isSelected" : true,
+        "limitCount" : 3,
+        "price" : 522,
+        "sale" : 529,
+        "link" : "https://www.wildberries.ru/catalog/16001942/detail.aspx",
+        "deliveryLimitList" : 
+            [
+                {
+                    "maxCount" : 60,
+                    "date" : "02/09/2024"
+                },
+                {
+                    "maxCount" : 1,
+                    "date" : "02/05/2024"
+                }
+            ]
+    },
+    {
+        "id" : 1,
+        "img" : "phone-case",
+        "imgAlt" : "Чехол",
+        "name" : "Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe",
+        "color" : "прозрачный",
+        "store" : "Коледино WB",
+        "companyId" : 1,
+        "isPresence" : true,
+        "isSelected" : false,
+        "limitCount" : 500,
+        "price" : 10500,
+        "sale" : 1000,
+        "link" : "https://www.wildberries.ru/catalog/137779323/detail.aspx",
+        "deliveryLimitList" : 
+            [
+                {
+                    "maxCount" : 184,
+                    "date" : "02/05/2024"
+                },
+                {
+                    "maxCount" : 100,
+                    "date" : "02/07/2024"
+                }
+            ]
+    },
+    {
+        "id" : 2,
+        "img" : "pencils",
+        "imgAlt" : "Карандаши",
+        "name" : "Карандаши цветные Faber-Castell \"Замок\", набор 24 цвета, заточенные, шестигранные, Faber-Castell ",
+        "store" : "Коледино WB",
+        "companyId" : 0,
+        "isPresence" : true,
+        "isSelected" : true,
+        "limitCount" : 4,
+        "price" : 247,
+        "sale" : 228,
+        "link" : "https://www.wildberries.ru/catalog/86492539/detail.aspx",
+        "deliveryLimitList" : 
+            [
+                {
+                    "maxCount" : 3,
+                    "date" : "02/05/2024"
+                },
+                {
+                    "maxCount" : 100,
+                    "date" : "02/11/2024"
+                }
+            ]
+
+    },
+    {
+        "id" : 3,
+        "img" : "t-shirt",
+        "imgAlt" : "Футболка",
+        "name" : "Футболка UZcotton мужская",
+        "color" : "белый",
+        "size" : "56",
+        "store" : "Коледино WB",
+        "companyId" : 0,
+        "isPresence" : false,
+        "limitCount" : 3,
+        "price" : 522,
+        "sale" : 529,
+        "link" : "https://www.wildberries.ru/catalog/16001942/detail.aspx"
+    },
+    {
+        "id" : 4,
+        "img" : "phone-case",
+        "imgAlt" : "Чехол",
+        "name" : "Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe",
+        "color" : "прозрачный",
+        "store" : "Коледино WB",
+        "companyId" : 1,
+        "isPresence" : false,
+        "limitCount" : 500,
+        "price" : 10500,
+        "sale" : 1000,
+        "link" : "https://www.wildberries.ru/catalog/137779323/detail.aspx"
+    },
+    {
+        "id" : 5,
+        "img" : "pencils",
+        "imgAlt" : "Карандаши",
+        "name" : "Карандаши цветные Faber-Castell \"Замок\", набор 24 цвета, заточенные, шестигранные, Faber-Castell ",
+        "store" : "Коледино WB",
+        "companyId" : 0,
+        "isPresence" : false,
+        "limitCount" : 4,
+        "price" : 247,
+        "sale" : 228,
+        "link" : "https://www.wildberries.ru/catalog/86492539/detail.aspx"
+    }
+]

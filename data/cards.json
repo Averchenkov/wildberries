@@ -1,0 +1,26 @@
+[
+    {
+        "id" : 0,
+        "paymentSystem" : "mir",
+        "number" : "1234567800001234",
+        "date" : "01/30"
+    },
+    {
+        "id" : 1,
+        "paymentSystem" : "visa",
+        "number" : "1234567800001234",
+        "date" : "01/30"
+    },
+    {
+        "id" : 2,
+        "paymentSystem" : "mastercard",
+        "number" : "1234567800001234",
+        "date" : "01/30"
+    },
+    {
+        "id" : 3,
+        "paymentSystem" : "maestro",
+        "number" : "1234567800001234",
+        "date" : "01/30"
+    }
+]

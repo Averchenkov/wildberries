@@ -17,7 +17,7 @@
 .basket-order__header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 17px;
 }
 .basket-order__title {
     font-size: 24px;
@@ -66,7 +66,7 @@
     .basket-order__header {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 8px;
+        margin-bottom: 9px;
         margin-right: -2px;
     }
     .basket-order__title {
@@ -103,28 +103,6 @@
 .delivery-table__item:nth-child(odd) {
     font-weight: 600;
 }
-.delivery-table__address {
-    margin-bottom: 4px;
-}
-.delivery-table__address-info {
-    display: flex;
-    align-items: center;
-    font-size: 13px;
-    line-height: 16px;
-    height: 16px;
-}
-.delivery-table__star-icon {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin-right: 4px;
-    background: url(../images/rating-star-icon.svg);
-}
-.delivery-table__address-rating {
-    margin-right: 8px;
-}
-.delivery-table__opening-hours {
-}
 .delivery-table__image-list {
     display: flex;
     gap: 8px;
@@ -146,9 +124,6 @@
     }
     .delivery-table__item:nth-child(even) {
         margin-bottom: 17px;
-    }
-    .delivery-table__address {
-        margin-bottom: 2px;
     }
     .delivery-table__opening-hours {
     }

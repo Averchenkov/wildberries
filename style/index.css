@@ -21,10 +21,16 @@ html {
     background: var(--background);
 }
 
+html, body {
+    scrollbar-gutter: stable;
+}
+
+
 body, button, fieldset, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
 }
+
 
 ::after, ::before {
     box-sizing: border-box;
@@ -47,6 +53,12 @@ input, select, textarea {
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 

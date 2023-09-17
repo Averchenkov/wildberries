@@ -46,11 +46,11 @@
 	line-height: 16px;
 }
 
-.user-input.user-input__danger input,
-.user-input.user-input__danger .user-input__helper {
+.user-input.user-input_danger input,
+.user-input.user-input_danger .user-input__helper {
 	color: var(--system-orange, #F55123);
 }
-.user-input.user-input__danger input {
+.user-input.user-input_danger input {
 	border-color: var(--system-orange, #F55123)
 }
 

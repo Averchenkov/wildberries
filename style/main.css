@@ -16,6 +16,8 @@
 .basket-page__order {
 }
 .basket-page__sidebar {
+    position: sticky;
+    top: 8px;
     margin-top: -12px;
     flex-basis: calc(304 * (100vw / 1024));
 }

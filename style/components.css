@@ -36,6 +36,16 @@
 }
 
 
+.button-magneta {
+    border-radius: 8px;
+    background: var(--magenta, #CB11AB);
+    color: var(--system-white, #FFF);
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
 .goods-image {
     position: relative;
     aspect-ratio: .75;
@@ -90,17 +100,13 @@
 }
 
 
-.pay-info {
-}
-.pay-info__card-info {
+.card {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
-    color: var(--black, #000);
     font-size: 16px;
     line-height: 24px;
 }
-.pay-info__card-icon {
+.card__icon {
     display: inline-flex;
     width: 32px;
     height: 24px;
@@ -110,22 +116,28 @@
     border-radius: 4px;
     background: #F6F6FA;
 }
-.pay-info__card-number {
+.card__number {
     display: inline-block;
     margin-right: 12px;
     margin-left: 8px;
 }
-.pay-info__card-date {
+.card__date {
     display: inline-block;
 }
-.pay-info_low-card-info .pay-info__card-info {
+.card.card__short {
     font-size: 13px;
     line-height: 16px;
 }
-.pay-info_low-card-info .pay-info__card-date {
+.card.card__short .card__date {
     display: none;
 }
 
+
+.pay-info {
+}
+.pay-info__card {
+    margin-bottom: 6px;
+}
 .pay-info__frame {
     color: var(--black, #000);
     font-size: 13px;
@@ -142,16 +154,17 @@
 .pay-info_with-choice .pay-info__method-choice {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 .pay-info__checkbox {
     margin-right: 8px;
 }
 .pay-info__clarification {
+    color: #9797AF;
 }
 
 @media (width < 660px) {
-    .pay-info_with-choice .pay-info__card-info {
+    .pay-info_with-choice .pay-info__card {
         display: none;
     }
     .pay-info_with-choice .pay-info__frame {
@@ -203,12 +216,10 @@
 .checkbox:hover:not(.checkbox.checkbox_selected) > .checkbox__decor{
     border-color: #a9a8b0;
 }
-
-@media (width < 660px) {
-    .checkbox__text {
-        line-height: 18px;
-    }
+.checkbox__text {
+    line-height: 18px;
 }
+
 
 
 .counter{
@@ -221,7 +232,6 @@
     background: var(--white, #FFF);
     padding-left: 0.35em;
     padding-right: 0.305em;
-    color: var(--black, #000);
     font-size: 16px;
     line-height: 1.5em;
 }
@@ -233,7 +243,7 @@
     border-radius: 6px;
     fill: currentColor;
 }
-.counter__button:not(.counter__button_disable):hover  {
+.counter__button:not(:disabled):hover  {
     background-color: #f1f1f5;
 }
 .counter__button_disable {
@@ -246,3 +256,83 @@
 }
 .counter__plus-icon {
 }
+
+.address {   
+}
+.address__description {
+    display: flex;
+    margin-top: 3px;
+    align-items: center;
+    font-size: 13px;
+    line-height: 16px;
+    height: 16px;
+}
+.address__star-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    background: url(../images/rating-star-icon.svg);
+}
+.address__rating {
+    margin-right: 8px;
+}
+.address__opening-hours {
+    margin-right: 8px;
+}
+.address.address_in-modal .address__opening-hours {
+    display: none;
+}
+.address__type {
+    display: none;
+    color: var(--gray, #A0A0A4);
+}
+.address.address_in-modal .address__type {
+    display: inline;
+}
+
+@media (width < 660px) {
+    .address__description {
+        margin-top: 2px;
+    }
+    .address__opening-hours {
+        display: none;
+    }
+}
+
+.radio-list {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-auto-rows: min-content;
+    column-gap: 8px;
+    row-gap: 16px;
+    align-items: self-start;
+}
+.radio-list.radio-list-with-delete-btns {
+    grid-template-columns: min-content auto min-content;
+}
+.radio-list input {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--white);
+    margin: 5px 2px 0 0;
+    border: 0.0625em solid rgba(0, 0, 0, 0.20);
+    border-radius: 50%;
+}
+.radio-list input:checked {
+    border: 0.3125em solid var(--magneta);
+}
+.radio-list__delete-btn {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    background: url(../images/delete-icon-gray.svg);
+}
+.radio-list__delete-btn:hover {
+    background: url(../images/delete-icon-hover.svg);
+}
+
