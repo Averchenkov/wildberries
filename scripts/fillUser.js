@@ -19,13 +19,13 @@ inputInnHTML.addEventListener("focusout", (event) => user.setInn(event.target.va
 fillUser()
 
 async function fillUser() {
-    await readJSON("pickPointAddresses.json").then(addressList => {
+    await readJSON("./pickPointAddresses.json").then(addressList => {
         user.setPickPointAddressList(addressList)
     })
-    await readJSON("userAddresses.json").then(addressList => {
+    await readJSON("./userAddresses.json").then(addressList => {
         user.setPersonalAddressList(addressList)
     })
-    await readJSON("cards.json").then(cardList => {
+    await readJSON("./cards.json").then(cardList => {
         user.setCardList(cardList)
     })
     
