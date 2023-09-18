@@ -8,8 +8,10 @@ accordionButtonContol.forEach(header => header.addEventListener("click", functio
     accordionContent.classList.toggle("goods-list_hidden")
     if (this.classList.contains("basket-goods__control-button_hidden")){
         accordionContent.style.maxHeight = 0;
+        accordionContent.style.overflow = "hidden"
     } else {
         accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+        accordionContent.style.overflow = "visible"
     }
 }))
 

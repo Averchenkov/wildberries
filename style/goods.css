@@ -74,7 +74,6 @@
     gap: 22px;
     align-self: stretch;
     border-top: 1px solid rgba(0, 0, 0, 0.10);
-    overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
 #product-list-absent.goods-list_hidden {
